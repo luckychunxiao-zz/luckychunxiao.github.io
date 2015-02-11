@@ -158,39 +158,16 @@ sup {
 <body>
 <h1>如何添加doubango工程</h1>
 
-<p>Writed by luckychunxiao email: <code>luckychunxiao#163.com</code></p>
+<ul>
+<li>把iOS-ngn-stack拖入自己工程</li>
+<li>build phases 中 link binary with libraries中添加lib库（添加以下全部）
+<img src="images/doubango_b_2.png" alt="doubango_blog_2" /></li>
+<li>build settings 中 architectures 修改Valid Architectures 为armv7</li>
+<li>build settings 中点击最上面的+号，添加User-Defined如图</li>
+<li>build settings 中找到Search Paths添加</li>
+<li>build settings 中找到Linking在Other Linker Flags添加</li>
+<li>把引用到iOSNgnStack.h的.m文件修改为.mm</li>
+</ul>
 
-<h2>1.把iOS-ngn-stack拖入自己工程</h2>
-
-<h2>2.build phases 中 link binary with libraries中添加lib库（添加以下全部）</h2>
-
-<p><img src="images/doubango_b_2.png" alt="doubango_blog_2" /></p>
-
-<h2>3.build settings 中 architectures 修改Valid Architectures 为armv7</h2>
-
-<p><img src="images/doubango_b_3.png" alt="doubango_blog_3" /></p>
-
-<h2>4.build settings 中点击最上面的+号，添加User-Defined如图</h2>
-
-<p><img src="images/doubango_b_4_1.png" alt="doubango_blog_4_1" />
-<img src="images/doubango_b_4_2.png" alt="doubango_blog_4_2" /></p>
-
-<h2>5.build settings 中找到Search Paths添加</h2>
-
-<h5>Header Search Paths:</h5>
-
-<p><img src="images/doubango_b_5.png" alt="doubango_blog_5" /></p>
-
-<h5>Library Search Paths:</h5>
-
-<p><img src="images/doubango_b_5_2.png" alt="doubango_blog_5_1" /></p>
-
-<h2>6.build settings 中找到Linking在Other Linker Flags添加</h2>
-
-<p><img src="images/doubango_b_6.png" alt="doubango_blog_6" /></p>
-
-<h2>7.把引用到iOSNgnStack.h的.m文件修改为.mm</h2>
-
-<p><img src="images/doubango_b_7.png" alt="doubango_blog_7" /></p>
 </body>
 </html>
